@@ -55,3 +55,17 @@ body {
   bottom: 0px;
   z-index: 1;
 }
+
+#ModalBodyR, #ModalBodyL{
+  background: #9575CD;
+}
+
+#ModalHeaderR, #ModalHeaderL{
+  background-color: #512DA8;
+  color: #ddd;
+
+}
+
+#DismissLogin, #DismissRes{
+  color: #dddddd;
+}

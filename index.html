@@ -31,8 +31,8 @@
                 </ul> 
 
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
-                    <span class="fa fa-sign-in"></span> Login</a>
+                    
+                    <span class="fa fa-sign-in" id="Spanbtn"></span> Login</a>
                 </span>
 
             </div>           
@@ -43,11 +43,11 @@
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header" id="ModalHeaderL">
                     <h4 class="modal-title">Login </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" id="DismissLogin">&times;</button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" id="ModalBodyL">
                     <form>
                         <div class="form-row">
                             <div class="form-group col-sm-4">
@@ -84,11 +84,11 @@
         <div class="modal-dialog modal-lg" role="content">
             <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Reserve Table </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="modal-header" id="ModalHeaderR">
+                    <h4 class="modal-title" id="ModalTitleR">Reserve Table </h4>
+                    <button type="button" class="close" id="DismissRes">&times;</button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" id="ModalBodyR">
                     <form>
                         
                         <div class="form-group row">
@@ -190,8 +190,8 @@
 
                 <div class="btn-group col-sm-3  align-self-center">
                     <a role="button" class="btn btn-warning col-12" 
-                    data-toggle="modal" data-target="#ReserveTable"
-                     data-placement="bottom"  >Reserve Table</a>
+                    id="BtnRes"
+                    >Reserve Table</a>
 
                 </div>
 
@@ -483,27 +483,10 @@
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
-    <script>
-        $(document).ready(function(){
-            $("#mycarousel").carousel( { interval: 2000 } );
+    <script src="js/scripts.js"></script>
 
-            $("#carouselButton").click(function(){
-                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-                    $("#mycarousel").carousel('pause');
-                    $("#carouselButton").children("span").removeClass('fa-pause');
-                    $("#carouselButton").children("span").addClass('fa-play');
-                }
-                else if ($("#carouselButton").children("span").hasClass('fa-play')){
-                    $("#mycarousel").carousel('cycle');
-                    $("#carouselButton").children("span").removeClass('fa-play');
-                    $("#carouselButton").children("span").addClass('fa-pause');                    
-                }
-            });
+    
 
-           
-            
-        });
-    </script>
 </body>
 
 </html>
